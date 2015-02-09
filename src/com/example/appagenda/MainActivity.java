@@ -1,4 +1,5 @@
 package com.example.appagenda;
+
 import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,26 +14,26 @@ public class MainActivity extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-	
-	Button agendar = (Button)findViewById(R.id.button2);
-	Button consultar = (Button)findViewById(R.id.button1);
-	
-    
-	agendar.setOnClickListener(new View.OnClickListener() { 
-    	
-        public void onClick(View view) {
-            Intent intent = new Intent(view.getContext(), Activity2.class);          
-            startActivity(intent);
-        }});
-	consultar.setOnClickListener(new View.OnClickListener() { 
-    	
-        public void onClick(View view) {
-            Intent intent = new Intent(view.getContext(), Activity1.class);          
-            startActivity(intent);
-        }});
-    
-}
 
+		Button agendar = (Button) findViewById(R.id.button2);
+		Button consultar = (Button) findViewById(R.id.button1);
+
+		agendar.setOnClickListener(new View.OnClickListener() {
+
+			public void onClick(View view) {
+				Intent intent = new Intent(view.getContext(), Activity2.class);
+				startActivity(intent);
+			}
+		});
+		consultar.setOnClickListener(new View.OnClickListener() {
+
+			public void onClick(View view) {
+				Intent intent = new Intent(view.getContext(), Activity1.class);
+				startActivity(intent);
+			}
+		});
+
+	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {

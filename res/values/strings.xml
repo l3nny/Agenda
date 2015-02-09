@@ -12,9 +12,9 @@
     <string name="date">ejemplo fecha 01/01/2015</string>
     <string name="time">ejemplo hora 12:00am</string>
     <string name="agenda">Agendar cita</string>
+    <string name="UptadeAgenda">Editar cita</string>
     <string name="new_meeting">Nueva citas</string>
     <string name="view_meeting">ver citas</string>
-  
-    
-    
+    <string name="title_activity_activity4">Activity4</string>
+
 </resources>

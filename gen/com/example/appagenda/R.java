@@ -981,7 +981,9 @@ containing a value of this type.
         public static final int abc_textfield_searchview_holo_light=0x7f020054;
         public static final int abc_textfield_searchview_right_holo_dark=0x7f020055;
         public static final int abc_textfield_searchview_right_holo_light=0x7f020056;
-        public static final int ic_launcher=0x7f020057;
+        public static final int basura=0x7f020057;
+        public static final int edit=0x7f020058;
+        public static final int ic_launcher=0x7f020059;
     }
     public static final class id {
         public static final int action_bar=0x7f05001c;
@@ -1111,16 +1113,19 @@ containing a value of this type.
         public static final int activity_activity1=0x7f030017;
         public static final int activity_activity2=0x7f030018;
         public static final int activity_activity3=0x7f030019;
-        public static final int activity_main=0x7f03001a;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001b;
+        public static final int activity_activity4=0x7f03001a;
+        public static final int activity_main=0x7f03001b;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001c;
     }
     public static final class menu {
         public static final int activity1=0x7f0c0000;
         public static final int activity2=0x7f0c0001;
         public static final int activity3=0x7f0c0002;
-        public static final int main=0x7f0c0003;
+        public static final int activity4=0x7f0c0003;
+        public static final int main=0x7f0c0004;
     }
     public static final class string {
+        public static final int UptadeAgenda=0x7f0a0018;
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
          */
         public static final int abc_action_bar_home_description=0x7f0a0001;
@@ -1167,13 +1172,14 @@ containing a value of this type.
         public static final int date=0x7f0a0015;
         public static final int description=0x7f0a0014;
         public static final int hello_world=0x7f0a000e;
-        public static final int new_meeting=0x7f0a0018;
+        public static final int new_meeting=0x7f0a0019;
         public static final int time=0x7f0a0016;
         public static final int title_activity_activity1=0x7f0a0010;
         public static final int title_activity_activity2=0x7f0a0011;
         public static final int title_activity_activity3=0x7f0a0012;
+        public static final int title_activity_activity4=0x7f0a001b;
         public static final int title_event=0x7f0a0013;
-        public static final int view_meeting=0x7f0a0019;
+        public static final int view_meeting=0x7f0a001a;
     }
     public static final class style {
         /** 

@@ -40,4 +40,26 @@
         android:layout_marginTop="40dp"
         />
 
+    <ImageButton
+        android:id="@+id/button1"
+        android:layout_width="59dp"
+        android:layout_height="59dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginRight="26dp"
+        android:text="Button" 
+        android:src="@drawable/edit" />/>
+
+    <ImageButton
+        android:id="@+id/button2"
+        android:layout_width="59dp"
+        android:layout_height="59dp"
+        android:layout_alignTop="@+id/button1"
+        android:layout_toLeftOf="@+id/button1"
+        android:src="@drawable/basura"
+        android:text="Button" />
+
+ />
+
 </RelativeLayout>
