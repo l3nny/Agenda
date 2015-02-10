@@ -20,6 +20,9 @@ public class Activity3 extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_activity3);
+		
+		base = new BD.AndroidBaseDatos(this);
+		base.open();
 
 		final TextView text = (TextView) findViewById(R.id.textView1);
 		Bundle reicieveParams = getIntent().getExtras();

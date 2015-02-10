@@ -39,6 +39,10 @@ public class Activity4 extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_activity4);
+		
+		base = new BD.AndroidBaseDatos(this);
+		base.open();
+		
 		final EditText t = (EditText) findViewById(R.id.editText1);
 		final EditText d = (EditText) findViewById(R.id.editText2);
 		final EditText f = (EditText) findViewById(R.id.editText3);

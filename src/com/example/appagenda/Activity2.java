@@ -31,50 +31,14 @@ public class Activity2 extends ActionBarActivity {
 	private int hour;
 	private int minute;
 
-	/** Callback received when the user "picks" a time in the dialog */
-	private TimePickerDialog.OnTimeSetListener mTimeSetListener = new TimePickerDialog.OnTimeSetListener() {
-		public void onTimeSet(TimePicker view, int hourOfDay, int minute1) {
-			hour = hourOfDay;
-			minute = minute1;
-			updateDisplay();
-
-		}
-	};
-
-	/** Updates the time in the TextView */
-	private void updateDisplay() {
-		final EditText h = (EditText) findViewById(R.id.editText4);
-		h.setText(new StringBuilder().append(pad(hour)).append(":")
-				.append(pad(minute)));
-	}
-
-	/** Add padding to numbers less than ten */
-	private static String pad(int c) {
-		if (c >= 10)
-			return String.valueOf(c);
-		else
-			return "0" + String.valueOf(c);
-	}
-
-	public void EditTextListener2() {
-
-		final EditText h = (EditText) findViewById(R.id.editText4);
-
-		h.setOnClickListener(new OnClickListener() {
-
-			@SuppressWarnings("deprecation")
-			@Override
-			public void onClick(View v) {
-
-				showDialog(TIME_DIALOG_ID);
-			}
-		});
-	}
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_activity2);
+		
+		base = new BD.AndroidBaseDatos(this);
+		base.open();
 		final EditText t = (EditText) findViewById(R.id.editText1);
 		final EditText d = (EditText) findViewById(R.id.editText2);
 		final EditText f = (EditText) findViewById(R.id.editText3);
@@ -91,8 +55,7 @@ public class Activity2 extends ActionBarActivity {
 		/** Display the current time in the TextView */
 		updateDisplay();
 
-		base = new BD.AndroidBaseDatos(this);
-		base.open();
+	
 		Button agendarcita = (Button) findViewById(R.id.button1);
 
 		agendarcita.setOnClickListener(new View.OnClickListener() {
@@ -188,6 +151,47 @@ public class Activity2 extends ActionBarActivity {
 
 		}
 	};
+	
+	/*-------------------------TIME PICKER----------------------------------------*/
+	/** Callback received when the user "picks" a time in the dialog */
+	private TimePickerDialog.OnTimeSetListener mTimeSetListener = new TimePickerDialog.OnTimeSetListener() {
+		public void onTimeSet(TimePicker view, int hourOfDay, int minute1) {
+			hour = hourOfDay;
+			minute = minute1;
+			updateDisplay();
+
+		}
+	};
+
+	/** Updates the time in the TextView */
+	private void updateDisplay() {
+		final EditText h = (EditText) findViewById(R.id.editText4);
+		h.setText(new StringBuilder().append(pad(hour)).append(":")
+				.append(pad(minute)));
+	}
+
+	/** Add padding to numbers less than ten */
+	private static String pad(int c) {
+		if (c >= 10)
+			return String.valueOf(c);
+		else
+			return "0" + String.valueOf(c);
+	}
+
+	public void EditTextListener2() {
+
+		final EditText h = (EditText) findViewById(R.id.editText4);
+
+		h.setOnClickListener(new OnClickListener() {
+
+			@SuppressWarnings("deprecation")
+			@Override
+			public void onClick(View v) {
+
+				showDialog(TIME_DIALOG_ID);
+			}
+		});
+	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {

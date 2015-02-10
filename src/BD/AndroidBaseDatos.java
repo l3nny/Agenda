@@ -41,13 +41,13 @@ public AndroidBaseDatos(Context context) {
 
 		
 	public void EliminarEvento(String t, String d, String f, String h){
-		 DB.execSQL("DELETE agenda WHERE titulo='"+t+"' AND  descripcion='"+d+"' AND  fecha='"+f+"' AND  hora='"+h+"' ");
+		 DB.execSQL("DELETE FROM agenda WHERE titulo='"+t+"' AND  descripcion='"+d+"' AND  fecha='"+f+"' AND  hora='"+h+"' ");
 	}
 
  //*********************************************
 
 	public void EditarEvento(String t, String d, String f, String h,String t1, String d1, String f1, String h1){
-		 DB.execSQL("UPDATE agenda  SET titulo='"+t+"'  descripcion='"+d+"'  fecha='"+f+"'  hora='"+h+"' WHERE titulo='"+t1+"' AND descripcion='"+d1+"' AND fecha='"+f1+"' AND hora='"+h1+"' ", null );
+		 DB.execSQL("UPDATE agenda  SET titulo='"+t+"',descripcion='"+d+"',fecha='"+f+"',hora='"+h+"' WHERE titulo='"+t1+"' AND descripcion='"+d1+"' AND fecha='"+f1+"' AND hora='"+h1+"'");
 
     		
 	}
