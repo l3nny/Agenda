@@ -82,7 +82,8 @@
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="40dp"
         android:layout_marginLeft="34dp"
-        android:text="TextView" />
+        android:text="TextView"
+        android:visibility="invisible" />
 
     <TextView
         android:id="@+id/textView2"
@@ -91,7 +92,8 @@
         android:layout_above="@+id/timePicker1"
         android:layout_alignLeft="@+id/textView1"
         android:layout_marginBottom="17dp"
-        android:text="TextView" />
+        android:text="TextView"
+        android:visibility="invisible" />
 
     <TextView
         android:id="@+id/textView3"
@@ -99,7 +101,8 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/timePicker1"
         android:layout_below="@+id/editText4"
-        android:text="TextView" />
+        android:text="TextView"
+        android:visibility="invisible" />
 
     <TextView
         android:id="@+id/textView4"
@@ -107,6 +110,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/button1"
         android:layout_alignLeft="@+id/textView2"
-        android:text="TextView" />
+        android:text="TextView"
+        android:visibility="invisible" />
 
 </RelativeLayout>

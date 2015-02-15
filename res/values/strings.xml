@@ -4,9 +4,9 @@
     <string name="app_name">AppAgenda</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_activity1">Activity1</string>
-    <string name="title_activity_activity2">Activity2</string>
-    <string name="title_activity_activity3">Activity3</string>
+    <string name="title_activity_activity1">Lista de eventos</string>
+    <string name="title_activity_activity2">Agendar evento</string>
+    <string name="title_activity_activity3">Evento</string>
     <string name="title_event">Titulo</string>
     <string name="description">Descripcion</string>
     <string name="date">ejemplo fecha 01/01/2015</string>
@@ -15,6 +15,6 @@
     <string name="UptadeAgenda">Editar cita</string>
     <string name="new_meeting">Nueva citas</string>
     <string name="view_meeting">ver citas</string>
-    <string name="title_activity_activity4">Activity4</string>
+    <string name="title_activity_activity4">Editar Evento</string>
 
 </resources>

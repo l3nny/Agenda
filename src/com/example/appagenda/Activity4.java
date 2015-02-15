@@ -44,9 +44,17 @@ public class Activity4 extends ActionBarActivity {
 		base.open();
 		
 		final EditText t = (EditText) findViewById(R.id.editText1);
+		Bundle reicieveParams11 = getIntent().getExtras();
+		t.setText(reicieveParams11.getString("titulo"));
 		final EditText d = (EditText) findViewById(R.id.editText2);
+		Bundle reicieveParams22 = getIntent().getExtras();
+		d.setText(reicieveParams22.getString("descripcion"));
 		final EditText f = (EditText) findViewById(R.id.editText3);
+		Bundle reicieveParams33 = getIntent().getExtras();
+		f.setText(reicieveParams33.getString("fecha"));
 		final EditText h = (EditText) findViewById(R.id.editText4);
+		Bundle reicieveParams44 = getIntent().getExtras();
+		h.setText(reicieveParams44.getString("hora"));
 		
 		final TextView text = (TextView) findViewById(R.id.textView1);
 		Bundle reicieveParams = getIntent().getExtras();
@@ -64,16 +72,11 @@ public class Activity4 extends ActionBarActivity {
 		Bundle reicieveParams4 = getIntent().getExtras();
 		text4.setText(reicieveParams4.getString("hora"));
 		
-		setCurrentDate();
+		
 		EditTextListener();
 		EditTextListener2();
 
-		final Calendar cal = Calendar.getInstance();
-		hour = cal.get(Calendar.HOUR_OF_DAY);
-		minute = cal.get(Calendar.MINUTE);
-
-		/** Display the current time in the TextView */
-		updateDisplay();
+	
 
 		base = new BD.AndroidBaseDatos(this);
 		base.open();

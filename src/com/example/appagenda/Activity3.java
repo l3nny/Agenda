@@ -69,7 +69,8 @@ public class Activity3 extends ActionBarActivity {
 						"Se elimino su cita", Toast.LENGTH_SHORT);
 				toast.show();
 				
-				Intent intent = new Intent(view.getContext(), Activity1.class);
+				Intent intent = new Intent(view.getContext(),
+						MainActivity.class);
 				startActivity(intent);
 			}
 		});

@@ -1,7 +1,11 @@
 package BD;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -52,11 +56,50 @@ public AndroidBaseDatos(Context context) {
     		
 	}
 	
+
+
+	
+	
+	@SuppressWarnings("unchecked")
+	public Evento[] ListaEventos2(){
+    	
+		Cursor cursor = DB.rawQuery("SELECT titulo, descripcion, fecha, hora FROM agenda ORDER BY fecha, hora ", null);
+	    
+		List<HashMap<Evento, String>> lista=new ArrayList<HashMap<Evento,String>>();
+
+		HashMap<String ,String>  temp = new HashMap<String,String>();
+		if(cursor.moveToFirst())
+		{
+			do{
+
+          temp.put( cursor.getString(0), "titulo");
+          temp.put(cursor.getString(2), "fecha");
+          temp.put(cursor.getString(3), "hora");
+          lista.addAll((Collection<? extends HashMap<Evento, String>>) temp);
+		
+	
+	
+	}while(cursor.moveToNext());
+}
+		Evento evento[]=new Evento[lista.size()];
+		for(int i=0;i<lista.size();i++)
+		{
+			
+			evento[i]=(Evento) lista.listIterator(i);
+			
+		}
+		return evento;
+    	
+    }
+
+	
 	public Evento[] ListaEventos(){
     	
-		Cursor cursor = DB.rawQuery("SELECT titulo, descripcion, fecha, hora FROM agenda", null);
+		Cursor cursor = DB.rawQuery("SELECT titulo, descripcion, fecha, hora FROM agenda ORDER BY fecha, hora ", null);
 	    
 		List<Evento> lista=new ArrayList<Evento>();
+				
+	
 		if(cursor.moveToFirst())
 		{
 			do{
@@ -73,7 +116,6 @@ public AndroidBaseDatos(Context context) {
 		return evento;
     	
     }
-
 
 
 }

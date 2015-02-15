@@ -14,6 +14,11 @@ public class Evento {
 		this.fecha = fecha;
 		this.hora = hora;
 	}
+	
+	public Evento() {
+		super();
+	}
+
 	public String getTitulo() {
 		return titulo;
 	}
@@ -42,8 +47,10 @@ public class Evento {
 	public String toString() {
 		
 
-		return titulo;
+		return titulo +"  "+ fecha +"  "+ hora;
 	}
+	
+	
 	
 	
 }
