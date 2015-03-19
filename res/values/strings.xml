@@ -16,5 +16,11 @@
     <string name="new_meeting">Nueva citas</string>
     <string name="view_meeting">ver citas</string>
     <string name="title_activity_activity4">Editar Evento</string>
+    <string name="title_activity_activity5">Iniciar sesion</string>
+    <string name="login">Iniciar</string>
+    <string name="register">Registro</string>
+    <string name="name">Nombre</string>
+    <string name="register2">Registrar</string>
+    <string name="title_activity_activity6">Registro</string>
 
 </resources>

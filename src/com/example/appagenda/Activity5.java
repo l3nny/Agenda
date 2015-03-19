@@ -8,38 +8,37 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends ActionBarActivity {
+public class Activity5 extends ActionBarActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
-
-		Button login = (Button) findViewById(R.id.button1);
-		Button register = (Button) findViewById(R.id.button2);
+		setContentView(R.layout.activity_activity5);
 		
-		login.setOnClickListener(new View.OnClickListener() {
+		Button agendar = (Button) findViewById(R.id.button2);
+		Button consultar = (Button) findViewById(R.id.button1);
+
+		agendar.setOnClickListener(new View.OnClickListener() {
 
 			public void onClick(View view) {
-				Intent intent = new Intent(view.getContext(), Activity5.class);
+				Intent intent = new Intent(view.getContext(), Activity2.class);
 				startActivity(intent);
 			}
 		});
-		
-		register.setOnClickListener(new View.OnClickListener() {
+		consultar.setOnClickListener(new View.OnClickListener() {
 
 			public void onClick(View view) {
-				Intent intent = new Intent(view.getContext(), Activity6.class);
+				Intent intent = new Intent(view.getContext(), Activity1.class);
 				startActivity(intent);
 			}
 		});
-	
+
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
+		getMenuInflater().inflate(R.menu.activity5, menu);
 		return true;
 	}
 

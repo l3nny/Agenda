@@ -11,6 +11,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
 	private static final String DATABASE_NAME = "BASE";
 	private static final int DATABASE_VERSION = 1;
     private final String sqlCreate1 = "CREATE TABLE agenda (titulo TEXT,descripcion TEXT, fecha TEXT ,hora TEXT)";
+    private final String sqlCreate2 = "CREATE TABLE usuario (nombre TEXT,correo TEXT, contrasena TEXT )";
 
     	
     	public static SQLiteHelper getInstance(Context context){
@@ -32,7 +33,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
     		
     		db.execSQL(sqlCreate1);
     	
-    		
+    		db.execSQL(sqlCreate2);
     	
     	}
 

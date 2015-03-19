@@ -9,22 +9,45 @@
     tools:context="com.example.agenda.Main1Activity"
     tools:ignore="RtlHardcoded" >
 
-    <Button
-        android:id="@+id/button1"
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="pas" />
+
+    <EditText
+        android:id="@+id/editText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="113dp"
-        android:text="@string/view_meeting" />
+        android:layout_marginTop="108dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="Correo" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="68dp"
-        android:text="@string/new_meeting" />
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignRight="@+id/editText2"
+        android:text="@string/register" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="54dp"
+        android:layout_toLeftOf="@+id/button2"
+        android:text="@string/login" />
 
 </RelativeLayout>
