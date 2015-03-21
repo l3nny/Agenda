@@ -345,7 +345,10 @@ int menu activity4 0x7f0c0003
 int menu activity5 0x7f0c0004
 int menu activity6 0x7f0c0005
 int menu main 0x7f0c0006
+int string Email 0x7f0a0024
+int string Password 0x7f0a0022
 int string UptadeAgenda 0x7f0a0018
+int string User 0x7f0a0023
 int string abc_action_bar_home_description 0x7f0a0001
 int string abc_action_bar_up_description 0x7f0a0002
 int string abc_action_menu_overflow_description 0x7f0a0003

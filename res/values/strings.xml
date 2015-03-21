@@ -22,5 +22,9 @@
     <string name="name">Nombre</string>
     <string name="register2">Registrar</string>
     <string name="title_activity_activity6">Registro</string>
+    <string name="Password">Contraseña</string>
+    <string name="User">Usuario</string>
+    <string name="Email">Correo</string>
+     
 
 </resources>

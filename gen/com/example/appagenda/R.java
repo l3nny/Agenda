@@ -1132,7 +1132,10 @@ containing a value of this type.
         public static final int main=0x7f0c0006;
     }
     public static final class string {
+        public static final int Email=0x7f0a0024;
+        public static final int Password=0x7f0a0022;
         public static final int UptadeAgenda=0x7f0a0018;
+        public static final int User=0x7f0a0023;
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
          */
         public static final int abc_action_bar_home_description=0x7f0a0001;
